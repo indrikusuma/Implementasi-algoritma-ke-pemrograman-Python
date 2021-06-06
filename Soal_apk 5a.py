@@ -6,12 +6,22 @@ Created on Mon May 31 15:16:05 2021
                   ---- PENENTUAN KELULUSAN ----
 """
 
-#Input Nilai
-print ("---- PENENTUAN KELULUSAN ----")
-Nilai = int(input ("Masukkan Nilai : "))
+#cek kelulusan, jika nilai > 60 maka status Lulus
+Jawab = "y"
+while Jawab=="y" or Jawab=="Y":
+    print ("=========================")
+    print(" CEK KELULUSAN ")
+    print ("=========================")
+    #setiap value yg diinputkan, secara default bertipe data STRING
+    n = input(">> Masukkan Nilai = ")
+    #cek nilai
+    if int(n)>60:
+        Status = "LULUS"
+    else:
+        Status="ULANG"
+    print(Status)
 
-#Read Nilai yang di inputkan
-if Nilai > 60:
-    print("Keterangan : LULUS")
-else:
-    print("Keterangan : TIDAK LULUS")
+    #inputan untuk break
+    Jawab = input(">> Mulai lagi ? y/t = ")
+    if Jawab== "t" or Jawab =="T":
+        break
