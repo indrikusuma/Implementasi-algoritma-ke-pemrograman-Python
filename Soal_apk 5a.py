@@ -3,25 +3,24 @@
 Created on Mon May 31 15:16:05 2021
 
 @author: Indrian Wahyu K - 20083000017
-                  ---- PENENTUAN KELULUSAN ----
+    ---- CEK KELULUSAN ----
 """
-
 #cek kelulusan, jika nilai > 60 maka status Lulus
-Jawab = "y"
-while Jawab=="y" or Jawab=="Y":
-    print ("=========================")
-    print(" CEK KELULUSAN ")
-    print ("=========================")
+JawabUlang = "y"
+while JawabUlang=="y" or JawabUlang=="Y":
+    print ("=================================")
+    print("           CEK KELULUSAN ")
+    print ("=================================")
     #setiap value yg diinputkan, secara default bertipe data STRING
     n = input(">> Masukkan Nilai = ")
     #cek nilai
     if int(n)>60:
-        Status = "LULUS"
+        sts = "Keterangan        = LULUS"
     else:
-        Status="ULANG"
-    print(Status)
+        sts = "Keterangan        = ULANG"
+    print(sts)
 
     #inputan untuk break
-    Jawab = input(">> Mulai lagi ? y/t = ")
-    if Jawab== "t" or Jawab =="T":
+    JawabUlang = input(">>> Apakah Anda ingin mulai program lagi ? y/t : ")
+    if JawabUlang== "t" or JawabUlang =="T":
         break
