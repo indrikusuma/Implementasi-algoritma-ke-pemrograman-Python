@@ -20,7 +20,6 @@ while JawabUlang=="y" or JawabUlang=="Y":
     NilaiDiskon = 0
 
     #Hitung Total Awal
-    print ("---- TRANSAKSI PEMBELIAN PRINTER EPSON T20 (Include Diskon) ----")
     Qty = int(input("Masukkan Jumlah Printer yang dibeli = "))
     if Qty > 0:
         TotalAwal = int(HrgSat) * int(Qty)
